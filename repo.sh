@@ -5,8 +5,8 @@ CORRECT_PASSWORD=Priya
 echo "Enter Username: "
 read USERNAME
 
-echo -n "Enter Password: "
-read -s PASSWORD
+echo "Enter Password: "
+read PASSWORD
 echo
 
 #USERNAME CHECK
