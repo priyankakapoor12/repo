@@ -1,10 +1,7 @@
 #!/bin/bash
-NUMBER1=$1
-NUMBER2=$2
+MOVIES=("Pushpa" "Dhoni" "Sachin")
 
-SUM=$((NUMBER1+NUMBER2))
-echo "Sum = $SUM"
-
-SUBTRACTION=$((NUMBER1-NUMBER2))
-echo "Subtraction = $SUBTRACTION"
-
+echo "First Movie = ${MOVIES[0]}"
+echo "Second Movie = ${MOVIES[1]}"
+echo "Third Movie = ${MOVIES[2]}"
+echo "All Movies = ${MOVIES[@]}"
