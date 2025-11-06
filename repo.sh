@@ -23,3 +23,7 @@ VALIDATE $? "Installing MySQL Server"
 echo "Installing NGINX..."
 apt install nginx -y
 VALIDATE $? "Installing NGINX"
+
+echo "Installing Apache Server..."
+apt install apache2 -y
+VALIDATE $? "Installing Apache Server"
