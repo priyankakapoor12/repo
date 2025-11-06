@@ -1,7 +1,9 @@
 #!/bin/bash
-MOVIES=("Pushpa" "Dhoni" "Sachin")
-
-echo "First Movie = ${MOVIES[0]}"
-echo "Second Movie = ${MOVIES[1]}"
-echo "Third Movie = ${MOVIES[2]}"
-echo "All Movies = ${MOVIES[@]}"
+NUMBER=$1
+if [$NUMBER -gt 100]
+then
+echo "Given number is greater than 100"
+else
+ echo "Given number is less than 100"
+ fi
+ 
