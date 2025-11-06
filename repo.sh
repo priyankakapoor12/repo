@@ -1,8 +1,7 @@
 #!/bin/bash
-NUMBER=$1
-if [ $NUMBER -gt 100 ]; then
-
-  echo "Given number is greater than 100"
-else
-  echo "Given number is less than 100"
+USERID=$(id - u)
+if [ $USERID -ne 0 ]
+then
+echo "Error: You must have sudo access to run this script"
 fi
+
