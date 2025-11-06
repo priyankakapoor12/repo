@@ -6,5 +6,5 @@ SUM=$((NUMBER1+NUMBER2))
 echo "Sum = $SUM"
 
 SUBTRACTION=$((NUMBER1-NUMBER2))
-echo "Subtraction = $SUBTRATION"
+echo "Subtraction = $SUBTRACTION"
 
