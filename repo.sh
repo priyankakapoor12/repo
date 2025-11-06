@@ -3,7 +3,7 @@ CORRECT_USER=Priyanka
 CORRECT_PASSWORD=Priya
 
 echo "Enter Username: "
-read USERNAMNE
+read USERNAME
 
 echo -n "Enter Password: "
 read -s PASSWORD
