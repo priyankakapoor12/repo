@@ -2,26 +2,27 @@
 CORRECT_USER=Priyanka
 CORRECT_PASSWORD=Priya
 
-echo "Enter Username: "
+echo -n "Enter Username: "
 read USERNAME
 
-echo "Enter Password: "
-read PASSWORD
+echo -n "Enter Password: "
+read -s PASSWORD
 echo
 
 #USERNAME CHECK
-if [[ "$USERNAME" != "$CORRECT_USER"]]; then
-echo "Incorrect Username!"
-exit 1
+if [[ "$USERNAME" != "$CORRECT_USER" ]]; then
+   echo "Incorrect Username!"
+   exit 1
+
 fi
 
 #PASSWORD CHECK
-if [[ "$PASSWORD" != "$CORRECT_PASSWORD"]]; then
-echo "Incorrect Password!"
-exit 1
+if [[ "$PASSWORD" != "$CORRECT_PASSWORD" ]]; then
+   echo "Incorrect Password!"
+   exit 1
 
 fi
 
-echo "Login successfull!"
+echo "Login successful!"
 echo "Welcome, $USERNAME!"
 
