@@ -1,9 +1,27 @@
 #!/bin/bash
-PERSON1=$1
-PERSON2=$2
-PERSON3=$3
+CORRECT_USER=Priyanka
+CORRECT_PASSWORD=Priya
 
-echo "$PERSON1: How are you $PERSON2?"
-echo "$PERSON2: I am good $PERSON1."
-echo "$PERSON3: How are you $PERSON1 and $PERSON2?"
+echo "Enter Username: "
+read USERNAMNE
+
+echo "Enter Password: "
+read -s PASSWORD
+echo
+
+#USERNAME CHECK
+if [[ "$USERNAME" != "$CORRECT_USER"]]; then
+echo "Incorrect Username!"
+exit 1
+fi
+
+#PASSWORD CHECK
+if [[ "$PASSWORD" != "$CORRECT_PASSWORD"]]; then
+echo "Incorrect Password!"
+exit 1
+
+fi
+
+echo "Login successfull!"
+echo "Welcome, $USERNAME!"
 
