@@ -7,7 +7,7 @@ echo -n "Enter Username: "
 read USERNAME
 
 echo -n "Enter Password: "
-read PASSWORD
+read -s PASSWORD
 echo
 
 # USERNAME CHECK
@@ -24,4 +24,3 @@ fi
 
 echo "Login successful!"
 echo "Welcome, $USERNAME!"
-
