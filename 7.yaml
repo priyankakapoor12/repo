@@ -1,0 +1,7 @@
+- name: variables
+  hosts: web
+
+  tasks:
+    - name: Print the name  
+      ansible.builtin.debug:
+        msg: "Name is {{NAME}}"
