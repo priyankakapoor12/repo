@@ -1,0 +1,10 @@
+- name: variables
+  hosts: local
+  connection: local
+  vars:
+    NAME: Priyanka
+
+  tasks:
+    - name: print the variables
+      ansible.builtin.debug:
+        msg: "Name is {{ NAME }}"
